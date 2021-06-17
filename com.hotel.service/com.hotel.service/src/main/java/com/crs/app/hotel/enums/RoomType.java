@@ -10,23 +10,13 @@ public enum RoomType {
 		this.value=value;
 	}
 	
-	private String getValue() {
-		return value;
-	}
-	
-	@Override
-	public String toString() {
-		return this.value;
-	}
-	
-	public static RoomType getEnum(String value) {
-		if(value==null || "".equals(value)) {
-			return null;
-		}
-		for(RoomType status:values()) 
-			if(status.toString().equalsIgnoreCase(value)) return status;
-		throw new IllegalArgumentException();
-		
-	}
+	/*
+	 * public static RoomType getEnum(String value) { if(value==null ||
+	 * "".equals(value)) { return null; } for(RoomType status:values())
+	 * if(status.toString().equalsIgnoreCase(value)) return status; throw new
+	 * IllegalArgumentException();
+	 * 
+	 * }
+	 */
 
 }

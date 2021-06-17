@@ -2,9 +2,10 @@ package com.crs.app.hotel.dto;
 
 import java.io.Serializable;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
 
-@Data
+@Getter
 public class BaseRestApiResponse implements Serializable{
 
 	/**

@@ -8,9 +8,12 @@ import com.crs.app.hotel.enums.RoomType;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+@Getter
+@Setter
 @NoArgsConstructor
 public class RoomsDTO {
 	

@@ -8,23 +8,6 @@ public class SuccessResponse<T> extends BaseRestApiResponse{
 		super();
 		this.response=response;
 	}
-	public SuccessResponse(String message,T response) {
-		super(message,true);
-		this.response=response;
-	}
-
-	public Object getResponse() {
-		return response;
-	}
-
-	public SuccessResponse(String message, boolean success) {
-		super(message, success);
-		// TODO Auto-generated constructor stub
-	}
-	public SuccessResponse(String message,boolean success,T response) {
-		super(message,success);
-		this.response=response;
-	}
 	
 
 }

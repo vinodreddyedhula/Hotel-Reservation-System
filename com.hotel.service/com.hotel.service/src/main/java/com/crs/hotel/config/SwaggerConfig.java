@@ -28,18 +28,4 @@ public class SwaggerConfig implements WebMvcConfigurer{
 	          .paths(PathSelectors.ant("/api/v1/**"))                          
 	          .build();                                           
 	    }
-	    
-		/*
-		 * @Bean public UiConfiguration uiConfig() { // TODO: improve headers when this
-		 * is fixed: // https://github.com/swagger-api/swagger-ui/issues/4839 return
-		 * UiConfigurationBuilder.builder().deepLinking(true).displayOperationId(false).
-		 * defaultModelsExpandDepth(1)
-		 * .defaultModelExpandDepth(1).defaultModelRendering(ModelRendering.EXAMPLE).
-		 * displayRequestDuration(false)
-		 * .docExpansion(DocExpansion.NONE).filter(false).maxDisplayedTags(null)
-		 * .operationsSorter(OperationsSorter.ALPHA).showExtensions(false).tagsSorter(
-		 * TagsSorter.ALPHA)
-		 * .supportedSubmitMethods(UiConfiguration.Constants.DEFAULT_SUBMIT_METHODS).
-		 * validatorUrl(null).build(); }
-		 */
 }

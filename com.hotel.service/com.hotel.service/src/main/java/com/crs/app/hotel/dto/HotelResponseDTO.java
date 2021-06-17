@@ -3,12 +3,14 @@ package com.crs.app.hotel.dto;
 import java.util.Date;
 import java.util.Set;
 
-import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
-@Data
+//@Data
 @NoArgsConstructor
+@Getter
+@Setter
 public class HotelResponseDTO extends BaseResponse {
 
 
@@ -21,5 +23,6 @@ public class HotelResponseDTO extends BaseResponse {
 	private String status;
 	private Set<RoomsDTO> roomsInfo;
 	private Date createdDate;
+	private Date modifiedDate;
 
 }

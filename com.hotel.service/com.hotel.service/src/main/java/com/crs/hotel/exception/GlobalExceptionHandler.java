@@ -15,13 +15,15 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 		if (exception instanceof BusinessException) {
 			BusinessException res = (BusinessException) exception;
 			return new ResponseEntity<BusinessException>(res, HttpStatus.UNPROCESSABLE_ENTITY);
-		} else if (exception instanceof ValidationException) {
-			ValidationException res = (ValidationException) exception;
-			return new ResponseEntity<ValidationException>(res, HttpStatus.NOT_FOUND);
-		} else {
-			return new ResponseEntity<>("Oops..Some problem in processing your request.Please try after some time.",
-					HttpStatus.INTERNAL_SERVER_ERROR);
-		}
+		} /*
+			 * else if (exception instanceof ValidationException) { ValidationException res
+			 * = (ValidationException) exception; return new
+			 * ResponseEntity<ValidationException>(res, HttpStatus.NOT_FOUND); } else {
+			 * return new ResponseEntity<>
+			 * ("Oops..Some problem in processing your request.Please try after some time.",
+			 * HttpStatus.INTERNAL_SERVER_ERROR); }
+			 */
+		return null;
 
 	}
 
